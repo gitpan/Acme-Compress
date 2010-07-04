@@ -1,0 +1,7 @@
+Changes
+MANIFEST
+Makefile.PL
+README
+lib/Acme/Compress.pm
+t/00-test.t
+META.yml                                 Module meta-data (added by MakeMaker)
