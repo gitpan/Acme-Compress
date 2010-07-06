@@ -1,7 +1,6 @@
 package Acme::Compress;
 
 use Compress::LZMA::External qw(compress decompress);
-use URI::Escape;
 
 use strict qw(vars subs);
 
@@ -11,11 +10,11 @@ Acme::Compress - When free space is not enough
 
 =head1 VERSION
 
-Version 0.02
+Version 0.03
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 =head1 SYNOPSIS
 
@@ -23,28 +22,29 @@ our $VERSION = '0.02';
 
   print "Hello world";
 
+The first time the script is run, it is compressed, then it can be used
+as normal.
+
 =cut
 
 my $TIE = "\t\t\t\t\t\t\t\t\n";
+my $err = "Can't compress '$0'\n";
 
-sub minify { "$TIE".uri_escape(compress $_[0]) }
-sub deminify {
-	$_[0] =~ s/.*^\t\t\t\t\t\t\t\t\n//;
-	decompress(uri_unescape($_[0]));
-} 
+sub minify { "$TIE".compress $_[0] }
+sub deminify { $_[0] =~ s/.*^$TIE//; decompress $_[0]; } 
 
 sub is_compressed { $_[0] =~ /^$TIE/ }
 
 local $SIG{__WARN__} = \&is_compressed;
 
-open 0 or print "Can't compress '$0'\n" and exit;
+open 0 or print $err and exit;
 (my $code = join "", <0>) =~ s/.*^\s*use\s+Acme::Compress\s*;\n//sm;
 
 local $SIG{__WARN__} = \&is_compressed;
 do {eval deminify $code; exit} if is_compressed $code;
 
-open 0, ">$0" or print "Cannot compress '$0'\n" and exit;
-print {0} "use Acme::Compress;\n", minify $code and exit;
+open 0, ">$0" or print $err and exit;
+print {0} "use ".__PACKAGE__.";\n", minify $code and exit;
 
 =head1 DESCRIPTION
 
