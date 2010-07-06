@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Acme-Compress
-version:            0.01
+version:            0.02
 abstract:           When free space is not enough
 author:
     - Alessandro Ghedini <alexbio@cpan.org>
@@ -11,7 +11,9 @@ configure_requires:
 build_requires:
     ExtUtils::MakeMaker:  0
 requires:
-    Test::More:  0
+    Compress::LZMA::External:  0
+    Test::More:           0
+    URI::Escape:          0
 no_index:
     directory:
         - t
