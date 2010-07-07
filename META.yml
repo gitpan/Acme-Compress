@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Acme-Compress
-version:            0.03
+version:            0.04
 abstract:           When free space is not enough
 author:
     - Alessandro Ghedini <alexbio@cpan.org>

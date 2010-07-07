@@ -1,5 +1,59 @@
-Revision history for Acme-Compress
+commit a5533fc182baf90882542e61f0a21548b17a520c
+Author: Alessandro Ghedini <al3xbio@gmail.com>
+Date:   Wed Jul 7 11:43:55 2010 +0200
 
-0.01    Date/time
-        First version, released on an unsuspecting world.
+    update version
 
+commit 5c9aff4940e5fd576898c12113e7c8bc5cf1253f
+Author: Alessandro Ghedini <al3xbio@gmail.com>
+Date:   Wed Jul 7 11:43:22 2010 +0200
+
+    add links in documentation
+
+commit 41b0955d637987c9cab2c1311cfcb9446dec7000
+Author: Alessandro Ghedini <al3xbio@gmail.com>
+Date:   Wed Jul 7 11:40:52 2010 +0200
+
+    update test
+
+commit 1ffe7d4cd9021c1dce5a50422d19f87bb16ff420
+Author: Alessandro Ghedini <al3xbio@gmail.com>
+Date:   Tue Jul 6 22:22:37 2010 +0200
+
+    add functioning in documentation
+
+commit f83a84a396b8917e81b331625572af08a67cb120
+Author: Alessandro Ghedini <al3xbio@gmail.com>
+Date:   Tue Jul 6 22:19:43 2010 +0200
+
+    improve code
+
+commit 6d2529ee56ae3e546cb04fc3d16ff1165df8b862
+Author: Alessandro Ghedini <al3xbio@gmail.com>
+Date:   Tue Jul 6 22:05:24 2010 +0200
+
+    remove URI::Escape
+
+commit 8e8a63ca2391f6ced9a62106a046b99d2eb0a04a
+Author: Alessandro Ghedini <al3xbio@gmail.com>
+Date:   Tue Jul 6 18:31:44 2010 +0200
+
+    update prereqs in Makefile.PL
+
+commit 4931abfebc74c55ebe4640af4626591cae3d05ad
+Author: Alessandro Ghedini <al3xbio@gmail.com>
+Date:   Sun Jul 4 22:01:19 2010 +0200
+
+    update MANIFEST
+
+commit 7ddc312401a6f5ebc62a1d65f33546e10dde77f1
+Author: Alessandro Ghedini <al3xbio@gmail.com>
+Date:   Sun Jul 4 21:59:26 2010 +0200
+
+    update README
+
+commit 435b9bf876248c7b32139657d084743d1ecd74c6
+Author: Alessandro Ghedini <al3xbio@gmail.com>
+Date:   Sun Jul 4 21:43:53 2010 +0200
+
+    first commit

@@ -24,6 +24,12 @@ perldoc command.
 
 You can also look for information at:
 
+    Homepage
+        http://alexlog.co.cc/projects/acme-compress
+
+    Git Repository
+        http://github.com/AlexBio/Acme-Compress
+
     RT, CPAN's request tracker
         http://rt.cpan.org/NoAuth/Bugs.html?Dist=Acme-Compress
 

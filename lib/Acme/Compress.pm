@@ -10,11 +10,11 @@ Acme::Compress - When free space is not enough
 
 =head1 VERSION
 
-Version 0.03
+Version 0.04
 
 =cut
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 =head1 SYNOPSIS
 
@@ -67,6 +67,14 @@ You can find documentation for this module with the perldoc command.
 You can also look for information at:
 
 =over 4
+
+=item * Homepage
+
+L<http://alexlog.co.cc/projects/acme-compress>
+
+=item * Git Repository
+
+L<http://github.com/AlexBio/Acme-Compress>
 
 =item * RT: CPAN's request tracker
 
